@@ -1,13 +1,13 @@
 import defaultExport, { owners } from "../data/heroes";
 
-console.log(owners);
-console.log(defaultExport);
+// console.log(owners);
+// console.log(defaultExport);
 
 // Metodo find
-const getHeroeById = (id) => {
+ export const getHeroeById = (id) => {
   return defaultExport.find((heroe) => heroe.id === id);
 };
-console.log(getHeroeById(2));
+// console.log(getHeroeById(2));
 
 // Metodo filter
 const getHeroeByOwner = (owner) => {
@@ -15,4 +15,4 @@ const getHeroeByOwner = (owner) => {
     heroe.owner.toLocaleLowerCase().includes(owner.toLocaleLowerCase())
   );
 };
-console.log(getHeroeByOwner("DC"));
+// console.log(getHeroeByOwner("DC"));
